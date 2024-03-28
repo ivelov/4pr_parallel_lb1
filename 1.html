@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lb1</title>
+  </head>
+  <body style="padding: 15px">
+    <button onclick="clickFun()">Click</button>
+    <script>
+      async function delay(ms) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve()
+          }, ms);
+        })
+      }
+
+      function clickFun() {
+        delay(2000).then(()=> alert('2sec'))
+      }
+
+    </script>
+  </body>
+</html>
